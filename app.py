@@ -1,23 +1,4 @@
-# import streamlit as st
-# import pandas as pd
-# import plotly.express as px
 
-# india_df=pd.read_csv(r"india.csv")
-# list_of_states=india_df['State'].unique().tolist()
-# list_of_states.insert(0,'Overal India')
-
-
-# st.sidebar.title("India's DATA")
-# selected_state=st.sidebar.selectbox('Select a state',list_of_states)
-# primary=selected_state=st.sidebar.selectbox('Select primary parameter',list(india_df.columns[6:]))
-# secondary=selected_state=st.sidebar.selectbox('Select secondary parameter',list(india_df.columns[6:]))
-
-# plot=st.sidebar.button('PLOT')
-
-# if plot:
-#     if selected_state=='Overal India':
-#         fig=px.scatter_mapbox(india_df,lat='Latitude',lon='Longitude',mapbox_style="carto-positron")
-#         st.plotly_chart(fig,use_container_width=True)
 import streamlit as st
 import pandas as pd
 import plotly.express as px
